@@ -1,0 +1,25 @@
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# Print all the elements of the list that are less than 5
+for i in a:
+    if i < 5:
+        print(i)
+
+# Extras 1
+# Initialize an empty list
+lst = []
+# We loop through the contents of list a
+for i in a:
+# We then append integers that are smaller than 5 to the newly initialized list and then print it
+    if i < 5:
+        lst.append(i)
+print(lst)
+
+# Extras 2
+# Using a lambda function to create a new list that holds items from a that are less than 5
+print(list(filter(lambda x: x < 5, a)))
+
+# Extras 3
+# Using the same technique but this time the new list will hold items that are smaller than the variable called num 
+num = int(input("Number you've chosen?: "))
+
+print(list(filter(lambda x: x < num, a)))
