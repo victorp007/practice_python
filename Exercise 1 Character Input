@@ -1,0 +1,6 @@
+# Ask the user for a name and his/her age then print a string that contains the user's name and the year in which he/she will turn 100 years old.
+name = input("Could you please tell me your name?: ")
+age = int(input("And what may be your age?: "))
+turn_hundred = (2018 - age) + 100
+
+print("%s will turn 100 years old in %i" % (name, turn_hundred))
