@@ -1,0 +1,8 @@
+# Takes an input from the user and returns the divisors of that number into a newly created list called lst
+num = int(input("Your number, please?: "))
+lst = []
+
+for i in range(1,num + 1):
+    if num % i == 0:
+        lst.append(i)
+print(lst)
