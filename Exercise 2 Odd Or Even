@@ -1,0 +1,10 @@
+# Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user.
+
+num = int(input("May I have the number you are thinking?: "))
+
+if num % 2 == 0 and num % 4 == 0:
+    print("You've chosen an even number that is also a multiple of 4")
+elif num % 2 == 0:
+    print("You've chosen an even number")
+else:
+    print("You've chosen an odd number")
