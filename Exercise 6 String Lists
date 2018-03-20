@@ -5,8 +5,6 @@ list1 = []
 
 for s in user_string:
     list1.append(s)
-#print(list1)
-#print(list1[::-1])
 
 # This statements checks if the given user input is a palindrome and prints a message if true.
 if list1 == list1[::-1]:
