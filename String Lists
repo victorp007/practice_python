@@ -1,0 +1,13 @@
+# Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+user_string = input("Provide a string: ")
+list1 = []
+
+for s in user_string:
+    list1.append(s)
+#print(list1)
+#print(list1[::-1])
+
+# This statements checks if the given user input is a palindrome and prints a message if true.
+if list1 == list1[::-1]:
+    print("The chosen string is a palindrome.")
