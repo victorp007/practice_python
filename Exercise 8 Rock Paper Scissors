@@ -1,0 +1,31 @@
+import sys
+
+# Ask for 2 different persons and also make them choose one of the three options: rock, paper, scissors
+first_user = input("What's your name?: ")
+second_user = input("And yours?: ")
+first_answer = input("%s what do you choose: rock, paper or scissors? " % (first_user))
+second_answer = input("%s what do you choose: rock, paper or scissors? " % (second_user))
+
+
+# Create a function that compares each of the user's choices and print out the winner of the confrontation
+def compare(ans1, ans2):
+    if ans1 == ans2:
+        print("It's a tie")
+    elif ans1 == "rock":
+        if ans2 == "paper":
+            print(second_user, "won")
+        else:
+            print(first_user, "won")
+    elif ans1 == "scissors":
+        if ans2 == "rock":
+            print(second_user, "won")
+        else:
+            print(first_user, "won")
+    elif ans1 == "paper":
+        if ans2 == "scissors":
+            print(second_user, "won")
+        else:
+            print(first_user, "won")
+    sys.exit()
+
+print(compare(first_answer, second_answer))
